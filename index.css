@@ -1,0 +1,182 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+body{
+  background-image: url('images/bg-pattern-top-mobile.svg'),url('images/bg-pattern-bottom-mobile.svg');
+  background-repeat: no-repeat,no-repeat;
+  background-position: top left, bottom right;
+  
+}
+body{
+  text-align: center;
+}
+svg {
+  width: 20px;
+  fill: rgb(243, 202, 18);
+  stroke: rgb(245, 209, 8);
+}
+main{
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding: 10px;
+}
+h1{
+  padding: 20px 20px;
+  color: hsl(300, 43%, 22%);
+  letter-spacing: -1px;
+}
+.header{
+  width: 345px;
+}
+.header p {
+  line-height: 1.5;
+  font-size: 15px;
+  color: rgb(62, 62, 63);
+}
+.rates {
+  margin: 20px 0;
+}
+.rate{
+  background-color: hsl(300, 24%, 96%);
+  margin: 10px 0;
+  box-sizing: content-box;
+  padding: 10px;
+  line-height: 1.4;
+  border-radius: 10px;
+  color:hsl(300, 43%, 22%) ;
+  font-weight: 700;
+  width: 345px;
+} 
+.twits {
+
+}
+.twits div {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  margin: 20px 0;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  padding: 50px;  
+  width: 345px;                              
+}
+.twits p {
+  grid-column: 1/-1;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.6;
+}
+h4,h3 {
+  color: rgb(255, 255, 255);
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+h4{
+  font-size: 12px;
+  color:hsl(333, 80%, 67%) ;
+}
+.twits img {
+  margin: 10px;
+  border-radius: 50%;
+  width: 40px;
+  margin: 0;
+}
+h4 {
+  align-self: flex-end;
+}
+.twits img{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+@media (min-width:1300px){
+
+  main{
+    width: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1400px;
+    padding: 100px;
+    background:transparent;
+  }
+  .rates {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .m {
+    margin-right: auto;
+  }
+  .m2{
+    margin-left: auto;
+  }
+  .header{
+    text-align: left;
+    letter-spacing: +1px;
+  }
+  h1 {
+    padding-left: 0;
+  }
+  .rates{
+    justify-self: flex-end;
+  }
+  .twits{
+    display: flex;
+    grid-column: 1/-1;
+    justify-content: space-between;
+    
+    height: 400px;
+  }
+  .at {
+    align-self:flex-start;
+  }
+  .ac{
+    align-self: center;
+
+  }
+  .ab {
+    align-self: flex-end;
+  }
+  body{
+    background-image: url('images/bg-pattern-top-desktop.svg'),url('images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left, bottom right;
+    
+  }
+  .rate {
+    width: 400px;
+    position: relative;
+    height: 20px;
+  }
+  .rate p {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+  }
+  
+  .rate span {
+    position: absolute;
+    left: 20px;
+  }
+}
+
+/* 
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+ */
